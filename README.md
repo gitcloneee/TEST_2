@@ -33,7 +33,7 @@ This repository contains a Telegram bot designed to perform DDoS attacks. The bo
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/yourusername/ddos-attack-bot.git
+   git clone https://github.com/gitcloneee/TEST_2
    cd ddos-attack-bot
    ```
 

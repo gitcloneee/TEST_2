@@ -6,7 +6,7 @@ import asyncio
 
 API_TOKEN = '6553640774:AAHEdBBrYD7fRq8rxYTc_-Dplr1cCobnUKU'
 ADMIN_ID = '6000952347'
-MAX_RESTARTS = 5    
+MAX_RESTARTS = 5
 RESTART_PERIOD = 60  # Seconds
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -35,20 +35,20 @@ async def main():
             if current_time - last_restart_time < RESTART_PERIOD:
                 wait_time = RESTART_PERIOD - (current_time - last_restart_time)
                 logging.warning("Maximum restart limit reached. Waiting for %.2f seconds...", wait_time)
-                await notify_admin(f"⚠️ Maximum restart limit reached. Waiting for {int(wait_time)} seconds before retrying.")
+                await notify_admin(f"Maximum restart limit reached. Waiting for {int(wait_time)} seconds before retrying")
                 await asyncio.sleep(wait_time)
             restart_count = 0
             last_restart_time = time.time()
 
         logging.info("Starting the bot...")
         process = start_bot()
-        await notify_admin("🚀 Bot is starting...")
+        await notify_admin("Bot is starting...")
 
         while process.poll() is None:
             await asyncio.sleep(5)
         
         logging.warning("Bot process terminated. Restarting in 10 seconds...")
-        await notify_admin("⚠️ The bot has crashed and will be restarted in 10 seconds.")
+        await notify_admin("The bot has crashed and will be restarted in 10 seconds.")
         restart_count += 1
         await asyncio.sleep(10)
         

@@ -1,8 +1,3 @@
-Video Tutorial https://youtu.be/EOqffCi_9n8
-## Contact 
-
-For any queries or support or removal, contact [@mesh213](https://t.me/mesh213) on Telegram. 
-
 ONLY FOR TESTING PURPOSE 
 ---
 Happy DDoS'ing responsibly! 🚀
@@ -123,5 +118,4 @@ This bot is intended for educational purposes only. The misuse of this bot may r
 
 ## Contributing
 
-If you wish to contribute to this project, feel free to submit a pull request or open an issue on GitHub.
-
+If you wish to contribute to this project, feel free to submit a pull request or open an issue on GitHub
